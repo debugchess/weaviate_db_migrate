@@ -250,7 +250,7 @@ try:
         print("RAG Results: ")
         response = collection.generate.near_text(
             query="A movie",  # The model provider integration will automatically vectorize the query
-            single_prompt="CCategorize genre: {title}",
+            single_prompt="Categorize genre: {title}",
             limit=2
         )
 
